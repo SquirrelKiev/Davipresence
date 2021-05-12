@@ -65,6 +65,13 @@ namespace Davipresence
                 activity.Assets.LargeImage = "unknown";
                 activity.Assets.LargeText = "In menus";
             }
+            else
+            {
+                DaviMap currentMap = GetDaviMap(GetCurrentScene());
+                activity.State = "In game (" + GetPlayerAmount() + " of 4)";
+                activity.Assets.LargeImage = currentMap.AssetKey;
+                activity.Assets.LargeText = currentMap.DisplayName;
+            }
 
 
             // MelonLogger.Msg("Yea im gaming dont worry - UpdateActivity");
