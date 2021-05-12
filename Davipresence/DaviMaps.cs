@@ -1,0 +1,6 @@
+﻿namespace Davipresence
+{
+    class DaviMaps
+    {
+    }
+}
