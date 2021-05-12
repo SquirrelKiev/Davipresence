@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Alpha - 828491273227993130\content\Mods\</OutputPath>
+    <OutputPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\Mods\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

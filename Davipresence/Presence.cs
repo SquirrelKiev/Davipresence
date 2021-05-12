@@ -68,7 +68,8 @@ namespace Davipresence
             else
             {
                 DaviMap currentMap = GetDaviMap(GetCurrentScene());
-                activity.State = "In game (" + GetPlayerAmount() + " of 4)";
+                activity.State = "In game";
+                activity.Details = currentMap.DisplayName;
                 activity.Assets.LargeImage = currentMap.AssetKey;
                 activity.Assets.LargeText = currentMap.DisplayName;
             }
