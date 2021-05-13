@@ -9,29 +9,31 @@ namespace Davipresence
     {
         public static DaviMap[] DaviMaps()
         {
-            List<DaviMap> daviMaps = new List<DaviMap>();
-            daviMaps.Add(new DaviMap("Acrophobia", "acrophobia", "Acrophobia"));
-            daviMaps.Add(new DaviMap("DiscOfDeath", "discofdeath", "Disc Of Death"));
-            daviMaps.Add(new DaviMap("Experiment_Hammer", "experiment_hammer", "Experiment_Hammer"));
-            daviMaps.Add(new DaviMap("HellsGate", "hellsgate", "Hell's Gate"));
-            daviMaps.Add(new DaviMap("Horizon", "horizon", "Horizon"));
-            daviMaps.Add(new DaviMap("Map_Kairos", "map_kairos", "Kairos"));
-            daviMaps.Add(new DaviMap("Megalophobia", "megalophobia", "Megalophobia"));
-            daviMaps.Add(new DaviMap("OvertureOverpass", "overtureoverpass", "Overture Overpass"));
-            daviMaps.Add(new DaviMap("PowerupPickup", "poweruppickup", "Powerup Pickup"));
-            daviMaps.Add(new DaviMap("ProvingGround", "provingground", "Proving Ground"));
-            daviMaps.Add(new DaviMap("Riverguard", "riverguard", "Riverguard"));
-            daviMaps.Add(new DaviMap("Showdown", "showdown", "Showdown"));
-            daviMaps.Add(new DaviMap("Tutorial", "tutorial", "Tutorial"));
-            daviMaps.Add(new DaviMap("ExperimentInputDelay", "unknown", "Experimental_InputDelay"));
-            // Custom Maps
-            daviMaps.Add(new DaviMap("25145379-29aa-4ea4-8c2c-ffe2d49c6438", "melonrun", "Melon Run"));
-            daviMaps.Add(new DaviMap("a112c0fe-2085-4632-9ef5-57ed8165c669", "davihome05", "DaviHouse 0.5"));
-            daviMaps.Add(new DaviMap("3a37af3d-c2d8-41df-9d08-d8ccc5caaef6", "davihome05", "DaviHouse V1"));
-            daviMaps.Add(new DaviMap("6005bc61-53ba-4dac-9800-fbb2155cbbf8", "caldera", "Caldera"));
-            daviMaps.Add(new DaviMap("b5463a50-7141-456b-82c2-67a65b87e507", "castleisland", "Battle For Castle Island"));
-            daviMaps.Add(new DaviMap("d13f4ccb-5418-4403-8ddc-908bc713db06", "provingplayground", "Proving Playground"));
-            daviMaps.Add(new DaviMap("42270802-d28c-4bf1-a5f1-55b716ea8be3", "davihands", "DaviHands"));
+            List<DaviMap> daviMaps = new List<DaviMap>
+            {
+                new DaviMap("Acrophobia", "acrophobia", "Acrophobia"),
+                new DaviMap("DiscOfDeath", "discofdeath", "Disc Of Death"),
+                new DaviMap("Experiment_Hammer", "experiment_hammer", "Experiment_Hammer"),
+                new DaviMap("HellsGate", "hellsgate", "Hell's Gate"),
+                new DaviMap("Horizon", "horizon", "Horizon"),
+                new DaviMap("Map_Kairos", "map_kairos", "Kairos"),
+                new DaviMap("Megalophobia", "megalophobia", "Megalophobia"),
+                new DaviMap("OvertureOverpass", "overtureoverpass", "Overture Overpass"),
+                new DaviMap("PowerupPickup", "poweruppickup", "Powerup Pickup"),
+                new DaviMap("ProvingGround", "provingground", "Proving Ground"),
+                new DaviMap("Riverguard", "riverguard", "Riverguard"),
+                new DaviMap("Showdown", "showdown", "Showdown"),
+                new DaviMap("Tutorial", "tutorial", "Tutorial"),
+                new DaviMap("ExperimentInputDelay", "unknown", "Experimental_InputDelay"),
+                // Custom Maps
+                new DaviMap("25145379-29aa-4ea4-8c2c-ffe2d49c6438", "melonrun", "Melon Run"),
+                new DaviMap("a112c0fe-2085-4632-9ef5-57ed8165c669", "davihome05", "DaviHouse 0.5"),
+                new DaviMap("3a37af3d-c2d8-41df-9d08-d8ccc5caaef6", "davihome05", "DaviHouse V1"),
+                new DaviMap("6005bc61-53ba-4dac-9800-fbb2155cbbf8", "caldera", "Caldera"),
+                new DaviMap("b5463a50-7141-456b-82c2-67a65b87e507", "castleisland", "Battle For Castle Island"),
+                new DaviMap("d13f4ccb-5418-4403-8ddc-908bc713db06", "provingplayground", "Proving Playground"),
+                new DaviMap("42270802-d28c-4bf1-a5f1-55b716ea8be3", "davihands", "DaviHands")
+            };
 
             return daviMaps.ToArray();
         }
