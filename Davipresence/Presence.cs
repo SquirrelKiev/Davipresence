@@ -7,8 +7,12 @@ namespace Davipresence
 {
     class Presence : MelonMod
     {
-        public const string ClientID = "841783425161887795";
+        private const string clientID = "841783425161887795";
         static Discord.Discord discord;
+
+        public static bool matchControllerExists = false;
+
+        public static int playerCount = 0;
 
         public override void OnApplicationStart()
         {
@@ -23,6 +27,10 @@ namespace Davipresence
             if(GetCurrentScene() != "Main")
             {
                 UpdateActivity();
+                if(GetCurrentScene() == "MenuClosedAlpha")
+                {
+                    matchControllerExists = false;
+                }
             }
         }
 
@@ -31,7 +39,7 @@ namespace Davipresence
 
         public static void DoDiscord()
         {
-            discord = new Discord.Discord(Int64.Parse(ClientID), (UInt64)Discord.CreateFlags.Default);
+            discord = new Discord.Discord(Int64.Parse(clientID), (UInt64)Discord.CreateFlags.Default);
             Thread.Sleep(3000);
             MelonLogger.Msg("Discord should be running");
             UpdateActivity();
@@ -60,7 +68,7 @@ namespace Davipresence
             if(CurrentScene == "Main") { return; }
             else if ((GetCurrentScene() == "MenuClosedAlpha"))
                 {
-                MelonLogger.Msg("In menus, Updating!");
+                // MelonLogger.Msg("In menus, Updating!");
                 activity.State = "In menus";
                 activity.Assets.LargeImage = "unknown";
                 activity.Assets.LargeText = "In menus";
@@ -69,7 +77,7 @@ namespace Davipresence
             {
                 DaviMap currentMap = GetDaviMap(GetCurrentScene());
                 activity.State = "In game";
-                activity.Details = currentMap.DisplayName;
+                activity.Details = currentMap.DisplayName + " (" + playerCount.ToString() + " of 4)";
                 activity.Assets.LargeImage = currentMap.AssetKey;
                 activity.Assets.LargeText = currentMap.DisplayName;
             }
@@ -83,8 +91,22 @@ namespace Davipresence
 
             activityManager.UpdateActivity(activity, result =>
             {
-                MelonLogger.Msg("Update Activity: {0}!", result);
+                // MelonLogger.Msg("Update Activity: {0}!", result);
             });
+        }
+
+
+        public override void OnUpdate()
+        {
+            if(GetCurrentScene() != "Main" && !matchControllerExists)
+            {
+                MatchController matchController = UnityEngine.Object.FindObjectOfType<MatchController>();
+                if (matchController != null)
+                {
+                    playerCount = matchController.match.WarriorCount;
+                    matchControllerExists = true;
+                }
+            }
         }
     }
 }
