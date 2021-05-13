@@ -25,10 +25,12 @@ namespace Davipresence
             daviMaps.Add(new DaviMap("Tutorial", "tutorial", "Tutorial"));
             daviMaps.Add(new DaviMap("ExperimentInputDelay", "unknown", "Experimental_InputDelay"));
             // Custom Maps
-            daviMaps.Add(new DaviMap("Melon Run", "melonrun", "Melon Run"));
-            daviMaps.Add(new DaviMap("DaviHome0.5", "davihome05", "Davihouse 0.5"));
-            daviMaps.Add(new DaviMap("Caldera", "caldera", "Caldera"));
-            daviMaps.Add(new DaviMap("Battle For Castle Island", "castleisland", "Battle For Castle Island"));
+            daviMaps.Add(new DaviMap("25145379-29aa-4ea4-8c2c-ffe2d49c6438", "melonrun", "Melon Run"));
+            daviMaps.Add(new DaviMap("a112c0fe-2085-4632-9ef5-57ed8165c669", "davihome05", "Davihouse 0.5"));
+            daviMaps.Add(new DaviMap("6005bc61-53ba-4dac-9800-fbb2155cbbf8", "caldera", "Caldera"));
+            daviMaps.Add(new DaviMap("b5463a50-7141-456b-82c2-67a65b87e507", "castleisland", "Battle For Castle Island"));
+            daviMaps.Add(new DaviMap("d13f4ccb-5418-4403-8ddc-908bc713db06", "provingplayground", "Proving Playground"));
+            daviMaps.Add(new DaviMap("42270802-d28c-4bf1-a5f1-55b716ea8be3", "davihands", "DaviHands"));
 
             return daviMaps.ToArray();
         }
@@ -52,12 +54,13 @@ namespace Davipresence
 
             foreach (DaviMap daviMap in MapArray)
             {
-                if(daviMap.SceneName == sceneName)
+                if(daviMap.MapID == Presence.currentMapID)
                 {
                     return daviMap;
                 }
             }
-            return new DaviMap(sceneName, "unknown", sceneName);
+            MelonLogger.Msg("Map lacking support! Please message SquirrelKiev#0002 with the map name and this UUID: " + Presence.currentMapID);
+            return new DaviMap(Presence.currentMapID, "unknown", sceneName);
         }
     }
 }

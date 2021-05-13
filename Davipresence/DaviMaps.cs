@@ -5,11 +5,11 @@
     /// </summary>
     public class DaviMap
      {
-        public string SceneName, AssetKey, DisplayName;
+        public string MapID, AssetKey, DisplayName;
 
-        public DaviMap(string DaviMapName, string DaviAssetKey, string DaviDisplayName)
+        public DaviMap(string DaviMapID, string DaviAssetKey, string DaviDisplayName)
         {
-            this.SceneName = DaviMapName;
+            this.MapID = DaviMapID;
             this.AssetKey = DaviAssetKey;
             this.DisplayName = DaviDisplayName;
         }

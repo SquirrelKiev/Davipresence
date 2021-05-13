@@ -8,11 +8,12 @@ namespace Davipresence
     class Presence : MelonMod
     {
         private const string clientID = "841783425161887795";
+        public static string currentMapID;
         static Discord.Discord discord;
 
-        public static bool matchControllerExists = false;
+        private static bool matchControllerExists = false;
 
-        public static int playerCount = 0;
+        private static int playerCount = 0;
 
         public override void OnApplicationStart()
         {
@@ -41,10 +42,10 @@ namespace Davipresence
         {
             discord = new Discord.Discord(Int64.Parse(clientID), (UInt64)Discord.CreateFlags.Default);
             Thread.Sleep(3000);
-            MelonLogger.Msg("Discord should be running");
+            // MelonLogger.Msg("Discord should be running");
             UpdateActivity();
 
-            // Pump the event look to ensure all callbacks continue to get fired.
+            // Do callback thing to update the status. 
 
             while (true)
             {
@@ -70,7 +71,7 @@ namespace Davipresence
                 {
                 // MelonLogger.Msg("In menus, Updating!");
                 activity.State = "In menus";
-                activity.Assets.LargeImage = "unknown";
+                activity.Assets.LargeImage = "davimenu";
                 activity.Assets.LargeText = "In menus";
             }
             else
@@ -104,6 +105,7 @@ namespace Davipresence
                 if (matchController != null)
                 {
                     playerCount = matchController.match.WarriorCount;
+                    currentMapID = matchController.match.Map.identifier;
                     matchControllerExists = true;
                 }
             }
