@@ -16,8 +16,7 @@ namespace Davipresence
 
         public override void OnApplicationStart()
         {
-            discord = new Discord.Discord(clientId, (UInt64)Discord.CreateFlags.Default);
-            SetActivity();
+            discord = new Discord.Discord(clientId, (UInt64)Discord.CreateFlags.NoRequireDiscord);
         }
 
         public override void OnUpdate()
@@ -50,12 +49,26 @@ namespace Davipresence
             activity = new Discord.Activity
             {
                 Timestamps =
-                  {
-                      Start = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds(),
-                  },
+                {
+                    Start = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds(),
+                },
             };
 
-
+            switch(currentSceneName)
+            {
+                case "Main":
+                    return;
+                case "Menu":
+                    activity.State = "In menus";
+                    activity.Assets.LargeImage = "davimenu";
+                    activity.Assets.LargeText = "In menus";
+                    break;
+                default:
+                    activity.State = "In game";
+                    activity.Details = currentSceneName + " (" + matchController.match.WarriorCount + " of 4)";
+                    break;
+            }
+            
 
             activityManager.UpdateActivity(activity, (result) =>
             {
