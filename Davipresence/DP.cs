@@ -12,10 +12,11 @@ namespace Davipresence
         private static Discord.Activity activity;
         private static MatchController matchController = null;
 
-        private static string currentSceneName;
+        public static string currentSceneName;
 
         public override void OnApplicationStart()
         {
+            DavimapsImport.JsonThing();
             discord = new Discord.Discord(clientId, (UInt64)Discord.CreateFlags.NoRequireDiscord);
         }
 
@@ -28,10 +29,6 @@ namespace Davipresence
         public override void OnSceneWasLoaded(int buildIndex,string sceneName)
         {
             currentSceneName = sceneName;
-            if(matchController != null)
-            {
-                MelonLogger.Msg(matchController.match.Map.identifier);
-            }
 
             SetActivity();
         }
@@ -64,8 +61,12 @@ namespace Davipresence
                     activity.Assets.LargeText = "In menus";
                     break;
                 default:
+                    Davimap davimap = DavimapsImport.GetDavimap(currentSceneName, matchController.match.Map.identifier);
+
                     activity.State = "In game";
-                    activity.Details = currentSceneName + " (" + matchController.match.WarriorCount + " of 4)";
+                    activity.Details = davimap.displayName + " (" + matchController.match.WarriorCount + " of 4)";
+                    activity.Assets.LargeImage = davimap.assetKey;
+                    activity.Assets.LargeText = davimap.displayName;
                     break;
             }
             

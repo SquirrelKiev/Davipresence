@@ -43,6 +43,10 @@
       <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\MelonLoader.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,6 +69,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Davimap.cs" />
+    <Compile Include="DavimapsImport.cs" />
     <Compile Include="DiscordJunk\ActivityManager.cs" />
     <Compile Include="DiscordJunk\Constants.cs" />
     <Compile Include="DiscordJunk\Core.cs" />

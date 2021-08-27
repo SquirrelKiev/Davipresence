@@ -6,11 +6,11 @@ namespace Davipresence
     {
         public string mapID, assetKey, displayName;
 
-        public Davimap(string mapID, string assetKey, string displayName)
+        public Davimap(string mapID, string displayName, string assetKey)
         {
             this.mapID = mapID;
-            this.assetKey = assetKey;
             this.displayName = displayName;
+            this.assetKey = assetKey;
         }
     }
 }
