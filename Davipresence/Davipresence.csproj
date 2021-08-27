@@ -44,6 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiscordJunk\ActivityManager.cs" />
+    <Compile Include="DiscordJunk\Constants.cs" />
+    <Compile Include="DiscordJunk\Core.cs" />
+    <Compile Include="DiscordJunk\ImageManager.cs" />
+    <Compile Include="DiscordJunk\LobbyManager.cs" />
+    <Compile Include="DiscordJunk\StorageManager.cs" />
+    <Compile Include="DiscordJunk\StoreManager.cs" />
     <Compile Include="DP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

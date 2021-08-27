@@ -9,5 +9,6 @@ namespace Davipresence
 {
     public class DP : MelonMod
     {
+        static Discord.Discord 
     }
 }
