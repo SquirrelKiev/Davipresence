@@ -9,7 +9,7 @@ using Davipresence;
 // associated with an assembly.
 [assembly: AssemblyTitle("Davipresence")]
 [assembly: MelonInfo(typeof(DP), "Davipresence", "2.0.0", "Author Name", "https://github.com/SquirrelKiev/Davipresence")]
-[assembly: MelonGame("Davigo", "Davico")]
+[assembly: MelonGame("Davico", "Davigo")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
