@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Davipresence", "Davipresence\Davipresence.csproj", "{4427A0B3-7DFB-4D3C-9435-3E90D625BF63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Davipresence", "Davipresence\Davipresence.csproj", "{18BF1188-EEB6-4F58-BBC7-94E206CB380A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4427A0B3-7DFB-4D3C-9435-3E90D625BF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4427A0B3-7DFB-4D3C-9435-3E90D625BF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4427A0B3-7DFB-4D3C-9435-3E90D625BF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4427A0B3-7DFB-4D3C-9435-3E90D625BF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18BF1188-EEB6-4F58-BBC7-94E206CB380A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18BF1188-EEB6-4F58-BBC7-94E206CB380A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18BF1188-EEB6-4F58-BBC7-94E206CB380A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BF1188-EEB6-4F58-BBC7-94E206CB380A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A1B6C6E5-B947-45A5-A99D-2885A3A35BDE}
+		SolutionGuid = {6F256014-48D1-4606-880D-73FF66E7BA9B}
 	EndGlobalSection
 EndGlobal

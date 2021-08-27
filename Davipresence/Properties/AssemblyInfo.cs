@@ -2,19 +2,19 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using MelonLoader;
+using Davipresence;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: MelonInfo(typeof(Davipresence.Presence), "Davipresence", "1.0", "SquirrelKiev")]
-[assembly: MelonGame("Davico", "Davigo")]
-
 [assembly: AssemblyTitle("Davipresence")]
+[assembly: MelonInfo(typeof(DP), "Davipresence", "2.0.0", "Author Name", "https://github.com/SquirrelKiev/Davipresence")]
+[assembly: MelonGame("Davigo", "Davico")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Davipresence")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -24,7 +24,7 @@ using MelonLoader;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4427a0b3-7dfb-4d3c-9435-3e90d625bf63")]
+[assembly: Guid("18bf1188-eeb6-4f58-bbc7-94e206cb380a")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -36,5 +36,5 @@ using MelonLoader;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyFileVersion("2.0.0.0")]
