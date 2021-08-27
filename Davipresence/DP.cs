@@ -1,5 +1,6 @@
 ﻿using System;
 using MelonLoader;
+using UnityEngine;
 
 namespace Davipresence
 {
@@ -9,6 +10,9 @@ namespace Davipresence
         private const long clientId = 841783425161887795;
 
         private static Discord.Activity activity;
+        private static MatchController matchController = null;
+
+        private static string currentSceneName;
 
         public override void OnApplicationStart()
         {
@@ -18,7 +22,19 @@ namespace Davipresence
 
         public override void OnUpdate()
         {
+            GetMatchController();
             discord.RunCallbacks();
+        }
+        
+        public override void OnSceneWasLoaded(int buildIndex,string sceneName)
+        {
+            currentSceneName = sceneName;
+            if(matchController != null)
+            {
+                MelonLogger.Msg(matchController.match.Map.identifier);
+            }
+
+            SetActivity();
         }
 
         public override void OnApplicationQuit()
@@ -33,23 +49,17 @@ namespace Davipresence
 
             activity = new Discord.Activity
             {
-                State = "In Play Mode",
-                Details = "Playing the Trumpet!",
                 Timestamps =
                   {
-                      Start = 5,
+                      Start = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds(),
                   },
-                /*Assets =
-                  {
-                      LargeImage = "foo largeImageKey", // Larger Image Asset Key
-                      LargeText = "foo largeImageText", // Large Image Tooltip
-                      SmallImage = "foo smallImageKey", // Small Image Asset Key
-                      SmallText = "foo smallImageText", // Small Image Tooltip
-                  },*/
             };
+
+
 
             activityManager.UpdateActivity(activity, (result) =>
             {
+                #if DEBUG
                 if (result == Discord.Result.Ok)
                 {
                     MelonLogger.Msg("Success!");
@@ -58,9 +68,16 @@ namespace Davipresence
                 {
                     MelonLogger.Error("Failed");
                 }
+                #endif
             });
         }
 
-        
+        private void GetMatchController()
+        {
+            if (currentSceneName != "Main" && matchController == null)
+            {
+                matchController = UnityEngine.Object.FindObjectOfType<MatchController>();
+            }
+        }
     }
 }

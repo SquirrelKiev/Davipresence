@@ -33,9 +33,15 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="MelonLoader">
       <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\MelonLoader.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,6 +51,18 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DiscordJunk\ActivityManager.cs" />
