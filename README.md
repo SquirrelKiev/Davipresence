@@ -14,6 +14,6 @@ This is discord rich presence for Davigo! This works with the closed alpha, as w
 * Proving Playground
 * DaviHands
 ## Images
-![Menu](https://github.com/SquirrelKiev/Davipresence/blob/master/ReadmeImages/Menu.png?raw=true)
-![Kairos](https://github.com/SquirrelKiev/Davipresence/blob/master/ReadmeImages/Kairos.png?raw=true)
-![Custom Map Support](https://github.com/SquirrelKiev/Davipresence/blob/master/ReadmeImages/CustomMaps.png?raw=true)
+![Menu](https://github.com/SquirrelKiev/Davipresence/blob/prototypes/ReadmeImages/Menu.png?raw=true)
+![Kairos](https://github.com/SquirrelKiev/Davipresence/blob/prototypes/ReadmeImages/Kairos.png?raw=true)
+![Custom Map Support](https://github.com/SquirrelKiev/Davipresence/blob/prototypes/ReadmeImages/CustomMaps.png?raw=true)
