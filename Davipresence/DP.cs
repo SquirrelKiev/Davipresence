@@ -16,7 +16,6 @@ namespace Davipresence
 
         public override void OnApplicationStart()
         {
-            DavimapsImport.JsonThing();
             discord = new Discord.Discord(clientId, (UInt64)Discord.CreateFlags.NoRequireDiscord);
         }
 
@@ -25,8 +24,8 @@ namespace Davipresence
             GetMatchController();
             discord.RunCallbacks();
         }
-        
-        public override void OnSceneWasLoaded(int buildIndex,string sceneName)
+
+        public override void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
             currentSceneName = sceneName;
 
@@ -51,7 +50,7 @@ namespace Davipresence
                 },
             };
 
-            switch(currentSceneName)
+            switch (currentSceneName)
             {
                 case "Main":
                     return;
@@ -69,11 +68,11 @@ namespace Davipresence
                     activity.Assets.LargeText = davimap.displayName;
                     break;
             }
-            
+
 
             activityManager.UpdateActivity(activity, (result) =>
             {
-                #if DEBUG
+#if DEBUG
                 if (result == Discord.Result.Ok)
                 {
                     MelonLogger.Msg("Success!");
@@ -82,7 +81,7 @@ namespace Davipresence
                 {
                     MelonLogger.Error("Failed");
                 }
-                #endif
+#endif
             });
         }
 

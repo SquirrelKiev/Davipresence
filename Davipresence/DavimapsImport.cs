@@ -12,13 +12,13 @@ namespace Davipresence
             new Davimap( "HellsGate", "Hell's Gate", "hellsgate")
         };
 
-        
+
 
         public static Davimap GetDavimap(string sceneName, string mapID)
         {
             foreach (Davimap davimap in Davimaps)
             {
-                if(DP.currentSceneName == davimap.mapID)
+                if (DP.currentSceneName == davimap.mapID)
                 {
                     return davimap;
                 }
@@ -28,8 +28,5 @@ namespace Davipresence
             return new Davimap(sceneName, "unknown", sceneName);
         }
 
-        private static void GetLatestMapInfo()
-        {
-        }
     }
 }
