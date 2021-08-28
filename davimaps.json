@@ -1,12 +1,482 @@
 [
   {
-    "mapID": "Map_Kairos",
-    "assetKey": "map_kairos",
-    "displayName": "Kairos"
+    "mapID": "c52ae9ac-44a8-4409-9e08-fa43ed6c26be",
+    "assetKey": "180ballin",
+    "displayName": "180 Ballin"
+  },
+  {
+    "mapID": "18d25e9d-8950-4f6a-84d8-2aaf45e04752",
+    "assetKey": "2combined",
+    "displayName": "2 Combined"
+  },
+  {
+    "mapID": "d72096bc-b693-4598-b7c9-4feee3f787c6",
+    "assetKey": "3ripleplatv10",
+    "displayName": "3riplePlat v1.0"
+  },
+  {
+    "mapID": "0f741bca-6d55-496a-8c94-df372cb1952f",
+    "assetKey": "5islandsv1",
+    "displayName": "5 Islands V1"
+  },
+  {
+    "mapID": "9632c2d8-a3b8-45b2-a55b-6873b76773b8",
+    "assetKey": "amongsttherainv2",
+    "displayName": "Amongst The Rain V2"
+  },
+  {
+    "mapID": "33549d62-8063-4ed9-99c6-27b1d8d46b07",
+    "assetKey": "ancientgoliath",
+    "displayName": "Ancient Goliath"
+  },
+  {
+    "mapID": "f74f49b8-42c8-4376-8e98-6abe0a12dce6",
+    "assetKey": "archipelagoattack",
+    "displayName": "Archipelago Attack"
+  },
+  {
+    "mapID": "ae5d53a0-2938-487b-bd0a-3903aad6c87f",
+    "assetKey": "artillery",
+    "displayName": "Artillery"
+  },
+  {
+    "mapID": "28cd0674-d794-4f91-8161-7fc7fe665df1",
+    "assetKey": "aspen",
+    "displayName": "Aspen"
+  },
+  {
+    "mapID": "b5463a50-7141-456b-82c2-67a65b87e507",
+    "assetKey": "battleforcastleisland",
+    "displayName": "Battle For Castle Island"
+  },
+  {
+    "mapID": "27f5c4d7-4af7-4f8c-a396-effde86dc91a",
+    "assetKey": "benevolentblocks",
+    "displayName": "Benevolent blocks"
+  },
+  {
+    "mapID": "f7a62364-4735-486e-8130-49961312cb13",
+    "assetKey": "blackforest",
+    "displayName": "BlackForest"
+  },
+  {
+    "mapID": "da7e640a-6859-45cb-916d-a8c503b6e38f",
+    "assetKey": "blackout",
+    "displayName": "Blackout"
+  },
+  {
+    "mapID": "75c27ed0-0a65-401b-a4d7-15ffe14c7a81",
+    "assetKey": "bomb-ombbattlefield",
+    "displayName": "Bomb-Omb Battlefield"
+  },
+  {
+    "mapID": "4feb42b5-a9ea-4cfb-ab7a-7563351ffe54",
+    "assetKey": "boxingv1",
+    "displayName": "boxing v1"
+  },
+  {
+    "mapID": "6005bc61-53ba-4dac-9800-fbb2155cbbf8",
+    "assetKey": "caldera",
+    "displayName": "Caldera"
+  },
+  {
+    "mapID": "3dc333bf-e119-482e-9fd6-f18752453d8b",
+    "assetKey": "city",
+    "displayName": "City"
+  },
+  {
+    "mapID": "1a8ee382-df55-40f8-b106-32a28ebdaa12",
+    "assetKey": "cityscape",
+    "displayName": "Cityscape"
+  },
+  {
+    "mapID": "2e0a6a72-4aae-41ae-b2fa-d1fbe8965769",
+    "assetKey": "cliff",
+    "displayName": "Cliff"
+  },
+  {
+    "mapID": "cc421918-0f73-4724-ab74-204a505b5dff",
+    "assetKey": "daveshalloweenv1",
+    "displayName": "Dave_s Halloween V1"
+  },
+  {
+    "mapID": "7ac0e55e-c7d6-4631-8b2d-014eb5915b92",
+    "assetKey": "daviortreatv1",
+    "displayName": "Davi or Treat V1"
+  },
+  {
+    "mapID": "284a05dd-398e-44cf-9a0c-3359a18dc8f3",
+    "assetKey": "daviball",
+    "displayName": "Daviball"
+  },
+  {
+    "mapID": "42270802-d28c-4bf1-a5f1-55b716ea8be3",
+    "assetKey": "davihandsv21",
+    "displayName": "Davihands V2.1"
+  },
+  {
+    "mapID": "a112c0fe-2085-4632-9ef5-57ed8165c669",
+    "assetKey": "davihouse05",
+    "displayName": "DaviHouse 0.5"
+  },
+  {
+    "mapID": "9e3104bb-30c4-4b42-8287-032ec29f2857",
+    "assetKey": "davimaze",
+    "displayName": "Davimaze"
+  },
+  {
+    "mapID": "29704584-1c8e-4f46-b51f-ddcfc6d658f6",
+    "assetKey": "davisaberpoorlymadeedition",
+    "displayName": "DaviSaber (Poorly made edition)"
+  },
+  {
+    "mapID": "9ffaf50f-b541-4a36-8dfe-2486633d5c0e",
+    "assetKey": "davitopia",
+    "displayName": "Davitopia"
+  },
+  {
+    "mapID": "4b0dde75-da44-45f4-82aa-f829bf55ab67",
+    "assetKey": "deepfreezev1",
+    "displayName": "Deep Freeze V1"
+  },
+  {
+    "mapID": "86c749ab-8ab8-49dd-ae51-3ef8277fa318",
+    "assetKey": "dualground",
+    "displayName": "dualground"
+  },
+  {
+    "mapID": "da982f3d-cdb9-413a-a968-ae12d5441bec",
+    "assetKey": "fallencastle",
+    "displayName": "Fallen Castle"
+  },
+  {
+    "mapID": "196678f8-7cb3-405b-99ca-d06dc627d482",
+    "assetKey": "thefastfoodgauntletv1",
+    "displayName": "The Fast Food Gauntlet V1"
+  },
+  {
+    "mapID": "b230c869-7814-485d-a2ec-d2578f23e6c2",
+    "assetKey": "floatingislandsv1",
+    "displayName": "Floating Islands V1"
+  },
+  {
+    "mapID": "9e1e21b2-6f53-4016-992c-c0225a6adfd2",
+    "assetKey": "giantstreasurereborn",
+    "displayName": "Giants Treasure REBORN"
+  },
+  {
+    "mapID": "e8566d96-d064-4f74-90a6-0af56c01fd95",
+    "assetKey": "giantscradlev4",
+    "displayName": "Giants_Cradle v4"
+  },
+  {
+    "mapID": "cd1263f3-112b-4d19-bbfd-c03d24d73745",
+    "assetKey": "giantsgraveyardv1",
+    "displayName": "Giants Graveyard V1"
+  },
+  {
+    "mapID": "5b85eeeb-e3e6-4898-ac1e-6c3eb1023a47",
+    "assetKey": "heavenscourt",
+    "displayName": "Heavens Court"
+  },
+  {
+    "mapID": "86b3fbcf-af76-47cd-afd7-86d43d62e455",
+    "assetKey": "thehiddenfortress",
+    "displayName": "The Hidden Fortress"
+  },
+  {
+    "mapID": "f7e834e9-fc78-4eca-a741-9655ffb8ab48",
+    "assetKey": "krakatoa",
+    "displayName": "Krakatoa"
+  },
+  {
+    "mapID": "d5a4222a-ac70-4173-82f7-08c0cc6da30d",
+    "assetKey": "largecity",
+    "displayName": "Large City"
+  },
+  {
+    "mapID": "25145379-29aa-4ea4-8c2c-ffe2d49c6438",
+    "assetKey": "melonrun",
+    "displayName": "Melon Run"
+  },
+  {
+    "mapID": "0bed22f6-3179-419e-ac45-fa3fc013cc3c",
+    "assetKey": "minecraft-davigoeditionv1",
+    "displayName": "Minecraft - Davigo Edition V1"
+  },
+  {
+    "mapID": "325acf22-8201-4bff-9b2b-06d53d79d374",
+    "assetKey": "rocketridingextravaganza",
+    "displayName": "Rocket Riding Extravaganza"
+  },
+  {
+    "mapID": "f8318eb6-7377-45b4-b60f-8f212a9415db",
+    "assetKey": "onett",
+    "displayName": "Onett"
+  },
+  {
+    "mapID": "143f3d4e-828b-4919-8f41-76605537e7da",
+    "assetKey": "outsetisland",
+    "displayName": "Outset Island"
+  },
+  {
+    "mapID": "0a08f14b-3729-47c1-9517-0c93ef37eca1",
+    "assetKey": "overhang",
+    "displayName": "Overhang"
+  },
+  {
+    "mapID": "2d02e6b3-7d52-48a9-b13a-dd8a13b4fb1a",
+    "assetKey": "peachscastle64",
+    "displayName": "Peach's Castle 64"
+  },
+  {
+    "mapID": "9b8d76a7-8a0f-493a-a24d-eff4c3435a0c",
+    "assetKey": "peachscastle64",
+    "displayName": "Peach's Castle 64"
+  },
+  {
+    "mapID": "4d4ee93b-22ad-4c2a-8c31-0e00b709824f",
+    "assetKey": "peachscastlevespersversion",
+    "displayName": "Peach's Castle [Vesper's Version]"
+  },
+  {
+    "mapID": "3d3d76f9-7c42-4e44-add0-0d79377ddef9",
+    "assetKey": "planets",
+    "displayName": "Planets"
+  },
+  {
+    "mapID": "17f04a08-004a-4901-8680-3b699b245b3d",
+    "assetKey": "provingground",
+    "displayName": "Proving Ground"
+  },
+  {
+    "mapID": "d13f4ccb-5418-4403-8ddc-908bc713db06",
+    "assetKey": "provingplayground",
+    "displayName": "Proving Playground"
+  },
+  {
+    "mapID": "841411e9-7d4e-401b-9da8-b0fef595dc60",
+    "assetKey": "ringarena",
+    "displayName": "Ring Arena"
+  },
+  {
+    "mapID": "476215be-a0cc-49c9-8450-bc89cdb1848f",
+    "assetKey": "rockyhills",
+    "displayName": "Rocky Hills"
+  },
+  {
+    "mapID": "fd805218-39f4-4885-b292-cf94a1c49f90",
+    "assetKey": "ruinground",
+    "displayName": "Ruin Ground"
+  },
+  {
+    "mapID": "1e6db5c7-32b6-43bf-acf7-a03c84e8ee8c",
+    "assetKey": "sanctuary",
+    "displayName": "Sanctuary"
+  },
+  {
+    "mapID": "6e67589f-0ab9-4cb3-92d7-3abcbb69f72f",
+    "assetKey": "shiganshina",
+    "displayName": "Shiganshina"
+  },
+  {
+    "mapID": "0fb4d8d0-8865-4c1a-ac09-079af0bd5b1e",
+    "assetKey": "shiganshina",
+    "displayName": "Shiganshina"
+  },
+  {
+    "mapID": "c7c9541c-b73e-4446-a4fb-a5ae0d6c153a",
+    "assetKey": "skyfortversion2",
+    "displayName": " Sky Fort [Version 2]"
+  },
+  {
+    "mapID": "dc90a808-fd3d-4053-ac14-d8d51948a47e",
+    "assetKey": "smashbrothersbedroom",
+    "displayName": "Smash Brothers Bedroom"
+  },
+  {
+    "mapID": "afaa1ad3-4d70-4db0-a8c2-7e6dd4c6be26",
+    "assetKey": "spacebattlev5",
+    "displayName": "Space Battle V5"
+  },
+  {
+    "mapID": "9b9f8126-4688-43a2-9a18-eeed65f7d9f5",
+    "assetKey": "spikyarenav2",
+    "displayName": "Spiky Arena V2"
+  },
+  {
+    "mapID": "a13273fb-b1cd-42fa-a8a6-7f46baca2e20",
+    "assetKey": "spleef",
+    "displayName": "Spleef"
+  },
+  {
+    "mapID": "2c802e3a-77d6-474c-a079-94eb2d592acf",
+    "assetKey": "stonehenge",
+    "displayName": "Stonehenge"
+  },
+  {
+    "mapID": "64fba3e1-d2f2-4d59-b424-aed85027711b",
+    "assetKey": "targetpractice",
+    "displayName": "Target Practice"
+  },
+  {
+    "mapID": "0eb138a0-fee6-4e2c-b746-d56bcc2202ef",
+    "assetKey": "testofmight",
+    "displayName": "Test of Might"
+  },
+  {
+    "mapID": "20173784-2989-4b6f-95ba-6b892800898d",
+    "assetKey": "thedunesv1",
+    "displayName": "The Dunes V1"
+  },
+  {
+    "mapID": "5f3282ca-3c7d-4986-9143-7901f4b6950d",
+    "assetKey": "thegarden",
+    "displayName": "The Garden"
+  },
+  {
+    "mapID": "731afa9a-0717-4ade-a4b8-b758fda2802b",
+    "assetKey": "thegiantstower",
+    "displayName": "The Giant's Tower"
+  },
+  {
+    "mapID": "4a9f214a-5c2e-4385-ae0a-d1dd328bbfce",
+    "assetKey": "thegreatchasm",
+    "displayName": "The Great Chasm"
+  },
+  {
+    "mapID": "45172bd6-0022-4835-bcb0-78d44b33cae8",
+    "assetKey": "thesummit",
+    "displayName": "The Summit"
+  },
+  {
+    "mapID": "91b8d623-c3f0-4501-aac6-3714b9d84c3d",
+    "assetKey": "thegiantstable",
+    "displayName": "The Giant's Table"
+  },
+  {
+    "mapID": "972fe0c5-0f04-4bb0-b68a-4bf7944a85a4",
+    "assetKey": "thewarriorscircle",
+    "displayName": "The Warrior's Circle"
+  },
+  {
+    "mapID": "cc9764ee-1c26-4554-a053-3313766d1a58",
+    "assetKey": "thethroneroom",
+    "displayName": "The Throne Room"
+  },
+  {
+    "mapID": "6c6ca973-4945-4ffe-8b76-2a363f770cf5",
+    "assetKey": "traininggiant",
+    "displayName": "Training Giant"
+  },
+  {
+    "mapID": "08ab96db-332e-4282-bf41-c9df594c9bb3",
+    "assetKey": "travercraigvillage",
+    "displayName": "Travercraig Village"
+  },
+  {
+    "mapID": "beccffbb-c59e-4d5d-a552-17227846fd9d",
+    "assetKey": "thetrenches",
+    "displayName": "The Trenches"
+  },
+  {
+    "mapID": "ba51bb69-69a3-4ebe-adf2-195a1b34425c",
+    "assetKey": "trenches",
+    "displayName": "Trenches"
+  },
+  {
+    "mapID": "3eefb206-0693-47ea-848a-5134dc1bd01f",
+    "assetKey": "ultimatumcity",
+    "displayName": "Ultimatum City"
+  },
+  {
+    "mapID": "2de2eb4b-3504-456b-8edd-ee525bb82580",
+    "assetKey": "warriortown",
+    "displayName": "Warrior Town"
+  },
+  {
+    "mapID": "513d8a16-3701-4d06-aab8-5de7b6fc3ab0",
+    "assetKey": "worldsend",
+    "displayName": "World's End"
+  },
+  {
+    "mapID": "b04a0bfb-2555-4e1f-b0b1-438e8560c5e9",
+    "assetKey": "youarebeingtested",
+    "displayName": "you are being tested"
+  },
+  {
+    "mapID": "Acrophobia",
+    "assetKey": "acrophobia",
+    "displayName": "Acrophobia"
+  },
+  {
+    "mapID": "DiscOfDeath",
+    "assetKey": "discofdeath",
+    "displayName": "Disc Of Death"
+  },
+  {
+    "mapID": "Experiment_Hammer",
+    "assetKey": "experiment_hammer",
+    "displayName": "Experiment_Hammer"
   },
   {
     "mapID": "HellsGate",
     "assetKey": "hellsgate",
     "displayName": "Hell's Gate"
+  },
+  {
+    "mapID": "Horizon",
+    "assetKey": "horizon",
+    "displayName": "Horizon"
+  },
+  {
+    "mapID": "Map_Kairos",
+    "assetKey": "map_kairos",
+    "displayName": "Kairos"
+  },
+  {
+    "mapID": "Megalophobia",
+    "assetKey": "megalophobia",
+    "displayName": "Megalophobia"
+  },
+  {
+    "mapID": "OvertureOverpass",
+    "assetKey": "overtureoverpass",
+    "displayName": "Overture Overpass"
+  },
+  {
+    "mapID": "PowerupPickup",
+    "assetKey": "poweruppickup",
+    "displayName": "Powerup Pickup"
+  },
+  {
+    "mapID": "ProvingGround",
+    "assetKey": "provingground",
+    "displayName": "Proving Ground"
+  },
+  {
+    "mapID": "Riverguard",
+    "assetKey": "riverguard",
+    "displayName": "Riverguard"
+  },
+  {
+    "mapID": "Showdown",
+    "assetKey": "showdown",
+    "displayName": "Showdown"
+  },
+  {
+    "mapID": "Tutorial",
+    "assetKey": "tutorial",
+    "displayName": "Tutorial"
+  },
+  {
+    "mapID": "ExperimentInputDelay",
+    "assetKey": "unknown",
+    "displayName": "Experimental_InputDelay"
+  },
+  {
+    "mapID": "Powerup Prototype 1 Fixed",
+    "assetKey": "purplecube",
+    "displayName": "Purple Power Cube"
   }
 ]
