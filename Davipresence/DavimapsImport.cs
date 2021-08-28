@@ -1,6 +1,6 @@
 ﻿using MelonLoader;
 using Newtonsoft.Json;
-using System.IO;
+using System.Net;
 
 namespace Davipresence
 {
@@ -11,12 +11,9 @@ namespace Davipresence
 
         public static Davimap[] GetDaviMaps()
         {
-            /*
             WebClient client = new WebClient();
             string json = client.DownloadString("https://raw.githubusercontent.com/SquirrelKiev/Davipresence/prototypes/davimaps.json");
-            client.Dispose();*/
-
-            string json = File.ReadAllText("C:\\Users\\Ethan Ginns-Farrow\\Downloads\\davimaps.json");
+            client.Dispose();
 
             Davimap[] davimaps = JsonConvert.DeserializeObject<Davimap[]>(json);
             return davimaps;
