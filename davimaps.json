@@ -1,0 +1,12 @@
+[
+  {
+    "mapID": "Map_Kairos",
+    "assetKey": "map_kairos",
+    "displayName": "Kairos"
+  },
+  {
+    "mapID": "HellsGate",
+    "assetKey": "hellsgate",
+    "displayName": "Hell's Gate"
+  }
+]
