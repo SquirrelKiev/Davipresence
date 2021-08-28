@@ -1,7 +1,6 @@
 ﻿using MelonLoader;
-using System;
 using Newtonsoft.Json;
-using System.Net;
+using System.IO;
 
 namespace Davipresence
 {
@@ -12,9 +11,12 @@ namespace Davipresence
 
         public static Davimap[] GetDaviMaps()
         {
+            /*
             WebClient client = new WebClient();
             string json = client.DownloadString("https://raw.githubusercontent.com/SquirrelKiev/Davipresence/prototypes/davimaps.json");
-            client.Dispose();
+            client.Dispose();*/
+
+            string json = File.ReadAllText("C:\\Users\\Ethan Ginns-Farrow\\Downloads\\davimaps.json");
 
             Davimap[] davimaps = JsonConvert.DeserializeObject<Davimap[]>(json);
             return davimaps;
@@ -24,14 +26,14 @@ namespace Davipresence
         {
             foreach (Davimap davimap in Davimaps)
             {
-                if (DP.currentSceneName == davimap.mapID)
+                if (DP.matchController.match.Map.identifier == davimap.mapID)
                 {
                     return davimap;
                 }
             }
 
             MelonLogger.Warning("Map lacking support! Please message SquirrelKiev#0002 with the map link and this ID: " + mapID);
-            return new Davimap(sceneName, "unknown", sceneName);
+            return new Davimap(sceneName, sceneName, "unknown");
         }
 
     }

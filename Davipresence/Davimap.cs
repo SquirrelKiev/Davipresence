@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Davipresence
+﻿namespace Davipresence
 {
     class Davimap
     {

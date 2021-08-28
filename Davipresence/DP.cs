@@ -1,6 +1,5 @@
 ﻿using System;
 using MelonLoader;
-using UnityEngine;
 
 namespace Davipresence
 {
@@ -10,7 +9,7 @@ namespace Davipresence
         private const long clientId = 841783425161887795;
 
         private static Discord.Activity activity;
-        private static MatchController matchController = null;
+        public static MatchController matchController = null;
 
         public static string currentSceneName;
 
@@ -73,7 +72,7 @@ namespace Davipresence
 
             activityManager.UpdateActivity(activity, (result) =>
             {
-#if DEBUG
+/*#if DEBUG
                 if (result == Discord.Result.Ok)
                 {
                     MelonLogger.Msg("Success!");
@@ -82,7 +81,7 @@ namespace Davipresence
                 {
                     MelonLogger.Error("Failed");
                 }
-#endif
+#endif*/
             });
         }
 
