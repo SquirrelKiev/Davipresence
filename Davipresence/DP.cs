@@ -17,6 +17,7 @@ namespace Davipresence
         public override void OnApplicationStart()
         {
             discord = new Discord.Discord(clientId, (UInt64)Discord.CreateFlags.NoRequireDiscord);
+            DavimapsImport.Davimaps = DavimapsImport.GetDaviMaps();
         }
 
         public override void OnUpdate()
