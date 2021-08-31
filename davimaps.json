@@ -478,5 +478,10 @@
     "mapID": "Powerup Prototype 1 Fixed",
     "assetKey": "purplecube",
     "displayName": "Purple Power Cube"
+  },
+  {
+    "mapID": "TargetPractice_Giant",
+    "assetKey": "targetpracticegiant",
+    "displayName": "Target Smash (Giant)"
   }
 ]
