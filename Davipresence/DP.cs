@@ -62,27 +62,49 @@ namespace Davipresence
                 default:
                     Davimap davimap = DavimapsImport.GetDavimap(currentSceneName, matchController.match.Map.identifier);
 
-                    activity.State = "In game";
-                    activity.Details = davimap.displayName + " (" + matchController.match.WarriorCount + " of 4)";
-                    activity.Assets.LargeImage = davimap.assetKey;
-                    activity.Assets.LargeText = davimap.displayName;
+                    switch (matchController.match.Mode.gameType)
+                    {
+                        case GameType.TargetPractice:
+                            activity.State = "In Target Smash";
+                            activity.Details = davimap.displayName;
+                            activity.Assets.LargeImage = davimap.assetKey;
+                            activity.Assets.LargeText = davimap.displayName;
+                            break;
+                        case GameType.Tutorial:
+                            activity.State = "In tutorial";
+                            activity.Assets.LargeImage = davimap.assetKey;
+                            activity.Assets.LargeText = davimap.displayName;
+                            break;
+                        default:
+                            activity.State = "In game";
+                            activity.Details = davimap.displayName + " (" + matchController.match.WarriorCount + " of 4)";
+                            activity.Assets.LargeImage = davimap.assetKey;
+                            activity.Assets.LargeText = davimap.displayName;
+                            break;
+                    }
                     break;
             }
 
 
             activityManager.UpdateActivity(activity, (result) =>
-            {
-/*#if DEBUG
-                if (result == Discord.Result.Ok)
                 {
-                    MelonLogger.Msg("Success!");
-                }
-                else
-                {
-                    MelonLogger.Error("Failed");
-                }
-#endif*/
-            });
+#if DEBUG
+                    if (result == Discord.Result.Ok)
+                    {
+                        MelonLogger.Msg("Discord status applied!");
+                        MelonLogger.Msg("Scene Name: " + currentSceneName);
+                        if (matchController != null)
+                        {
+                            MelonLogger.Msg("Game type: " + matchController.match.Mode.gameType);
+                            MelonLogger.Msg("Map ID: " + matchController.match.Map.identifier);
+                        }
+                    }
+                    else
+                    {
+                        MelonLogger.Error("Failed: " + result.ToString());
+                    }
+#endif
+                });
         }
 
         private void GetMatchController()
