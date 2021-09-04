@@ -1,5 +1,5 @@
 # What is Davipresence?
-This is discord rich presence for Davigo! This currently only works with the latest prototype build (0.2.2P), as well as all current custom maps posted on the Discord. 
+This is discord rich presence for Davigo! This currently only works with the latest prototype build (0.2.3P), as well as all current custom maps posted on the Discord. 
 ## Installation
 1. Install [MelonLoader 0.4.3](https://github.com/HerpDerpinstine/MelonLoader/releases/latest/download/MelonLoader.Installer.exe) to your Davigo directory (default location is `%localappdata%\DiscordGames\Davigo Prototypes - 782412020942766121\content\` for the prototypes)
 2. Download the latest release from [here](https://github.com/SquirrelKiev/Davipresence/releases/download/v2.1.1/Davipresence.dll), and move it to the `Mods` directory in your Davigo folder. 
