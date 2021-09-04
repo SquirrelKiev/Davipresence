@@ -23,7 +23,7 @@ namespace Davipresence
         {
             foreach (Davimap davimap in Davimaps)
             {
-                if (DP.matchController.match.Map.identifier == davimap.mapID)
+                if (mapID == davimap.mapID)
                 {
                     return davimap;
                 }

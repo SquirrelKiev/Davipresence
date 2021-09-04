@@ -10,6 +10,7 @@ namespace Davipresence
 
         private static Discord.Activity activity;
         public static MatchController matchController = null;
+        public static Govidad.Room govidadMatchController = null;
 
         public static string currentSceneName;
 
@@ -46,7 +47,7 @@ namespace Davipresence
             {
                 Timestamps =
                 {
-                    Start = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds(),
+                    Start = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds()
                 },
             };
 
@@ -60,28 +61,45 @@ namespace Davipresence
                     activity.Assets.LargeText = "In menus";
                     break;
                 default:
-                    Davimap davimap = DavimapsImport.GetDavimap(currentSceneName, matchController.match.Map.identifier);
-
-                    switch (matchController.match.Mode.gameType)
+                    if(govidadMatchController != null)
                     {
-                        case GameType.TargetPractice:
-                            activity.State = "In Target Smash";
-                            activity.Details = davimap.displayName;
-                            activity.Assets.LargeImage = davimap.assetKey;
-                            activity.Assets.LargeText = davimap.displayName;
-                            break;
-                        case GameType.Tutorial:
-                            activity.State = "In tutorial";
-                            activity.Assets.LargeImage = davimap.assetKey;
-                            activity.Assets.LargeText = davimap.displayName;
-                            break;
-                        default:
-                            activity.State = "In game";
-                            activity.Details = davimap.displayName + " (" + matchController.match.WarriorCount + " of 4)";
-                            activity.Assets.LargeImage = davimap.assetKey;
-                            activity.Assets.LargeText = davimap.displayName;
-                            break;
+                        Davimap davimap = DavimapsImport.GetDavimap(currentSceneName, currentSceneName);
+
+                        activity.State = "In online";
+
+                        // activity.Details = davimap.displayName + " (" + govidadMatchController.warriorControllers.Count + " of 4)";
+                        activity.Details = davimap.displayName;
+                        activity.Assets.LargeImage = davimap.assetKey;
+                        activity.Assets.LargeText = davimap.displayName;
+                        break;
                     }
+                    else if (matchController != null)
+                    {
+                        Davimap davimap = DavimapsImport.GetDavimap(currentSceneName, matchController.match.Map.identifier);
+
+                        switch (matchController.match.Mode.gameType)
+                        {
+                            case GameType.TargetPractice:
+                                activity.State = "In Target Smash";
+                                activity.Details = davimap.displayName;
+                                activity.Assets.LargeImage = davimap.assetKey;
+                                activity.Assets.LargeText = davimap.displayName;
+                                break;
+                            case GameType.Tutorial:
+                                activity.State = "In tutorial";
+                                activity.Assets.LargeImage = davimap.assetKey;
+                                activity.Assets.LargeText = davimap.displayName;
+                                break;
+                            default:
+                                activity.State = "In game";
+                                activity.Details = davimap.displayName + " (" + matchController.match.WarriorCount + " of 4)";
+                                activity.Assets.LargeImage = davimap.assetKey;
+                                activity.Assets.LargeText = davimap.displayName;
+                                break;
+                        }
+                        break;
+                    }
+                    MelonLogger.Msg("No match controllers found!");
                     break;
             }
 
@@ -109,9 +127,13 @@ namespace Davipresence
 
         private void GetMatchController()
         {
-            if (currentSceneName != "Main" && matchController == null)
+            if (currentSceneName != "Main" && matchController == null || govidadMatchController == null)
             {
                 matchController = UnityEngine.Object.FindObjectOfType<MatchController>();
+                if(matchController == null)
+                {
+                    govidadMatchController = UnityEngine.Object.FindObjectOfType<Govidad.Room>();
+                }
             }
         }
     }

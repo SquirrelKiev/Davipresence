@@ -35,6 +35,10 @@
       <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\Managed\Fusion.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Il2Cppmscorlib">
       <HintPath>..\..\..\..\AppData\Local\DiscordGames\Davigo Prototypes - 782412020942766121\content\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
       <Private>False</Private>
