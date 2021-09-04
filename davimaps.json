@@ -110,6 +110,11 @@
     "displayName": "Daviball"
   },
   {
+    "mapID": "6ab0ee4e-e768-44d0-84eb-e97210695a3e",
+    "assetKey": "davigomap",
+    "displayName": "davigo map"
+  },
+  {
     "mapID": "42270802-d28c-4bf1-a5f1-55b716ea8be3",
     "assetKey": "davihandsv21",
     "displayName": "Davihands V2.1"
@@ -140,9 +145,19 @@
     "displayName": "Deep Freeze V1"
   },
   {
+    "mapID": "24ff6a2c-7ca3-4ed0-9820-c812ecf345b3",
+    "assetKey": "donutboss",
+    "displayName": "Donut Boss"
+  },
+  {
     "mapID": "86c749ab-8ab8-49dd-ae51-3ef8277fa318",
     "assetKey": "dualground",
     "displayName": "dualground"
+  },
+  {
+    "mapID": "77a4704d-9ced-4234-a099-ad50cba876c4",
+    "assetKey": "fallmountain",
+    "displayName": "Fall Mountain"
   },
   {
     "mapID": "da982f3d-cdb9-413a-a968-ae12d5441bec",
@@ -210,6 +225,11 @@
     "displayName": "Rocket Riding Extravaganza"
   },
   {
+    "mapID": "f743846f-8cc1-4013-9f04-7fbe2626b4c3",
+    "assetKey": "ninjawarrior",
+    "displayName": "Ninja Warrior"
+  },
+  {
     "mapID": "f8318eb6-7377-45b4-b60f-8f212a9415db",
     "assetKey": "onett",
     "displayName": "Onett"
@@ -243,6 +263,11 @@
     "mapID": "3d3d76f9-7c42-4e44-add0-0d79377ddef9",
     "assetKey": "planets",
     "displayName": "Planets"
+  },
+  {
+    "mapID": "f5215801-b579-4096-9507-03756ab24481",
+    "assetKey": "planko",
+    "displayName": "Planko"
   },
   {
     "mapID": "17f04a08-004a-4901-8680-3b699b245b3d",
@@ -330,7 +355,7 @@
     "displayName": "The Dunes V1"
   },
   {
-    "mapID": "5f3282ca-3c7d-4986-9143-7901f4b6950d",
+    "mapID": "89c9ace1-dbc5-4f12-9aff-3045ccb1a625",
     "assetKey": "thegarden",
     "displayName": "The Garden"
   },
@@ -370,7 +395,7 @@
     "displayName": "Training Giant"
   },
   {
-    "mapID": "08ab96db-332e-4282-bf41-c9df594c9bb3",
+    "mapID": "4b40ff67-6b96-4da2-b8ed-b65cc45faefc",
     "assetKey": "travercraigvillage",
     "displayName": "Travercraig Village"
   },
@@ -483,5 +508,10 @@
     "mapID": "TargetPractice_Giant",
     "assetKey": "targetpracticegiant",
     "displayName": "Target Smash (Giant)"
+  },
+  {
+    "mapID": "Govidad_Kairos",
+    "assetKey": "map_kairos",
+    "displayName": "Kairos (Govidad)"
   }
 ]
