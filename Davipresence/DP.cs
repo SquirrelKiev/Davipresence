@@ -66,7 +66,6 @@ namespace Davipresence
                         Davimap davimap = DavimapsImport.GetDavimap(currentSceneName, currentSceneName);
 
                         activity.State = "In online";
-
                         // activity.Details = davimap.displayName + " (" + govidadMatchController.warriorControllers.Count + " of 4)";
                         activity.Details = davimap.displayName;
                         activity.Assets.LargeImage = davimap.assetKey;
@@ -99,7 +98,7 @@ namespace Davipresence
                         }
                         break;
                     }
-                    MelonLogger.Msg("No match controllers found!");
+                    MelonLogger.Warning("No match controllers found!");
                     break;
             }
 
